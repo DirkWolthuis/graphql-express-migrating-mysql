@@ -1,0 +1,23 @@
+version: '3'
+services:
+    database:
+        image: mysql:5.7
+        restart: always
+        environment:
+            - 'MYSQL_ROOT_PASSWORD=123456'
+            - 'MYSQL_DATABASE=graphql-mysql-tutorial'
+            - 'MYSQL_USER=graphql'
+            - 'MYSQL_PASSWORD=123456'
+        ports:
+            - 8006:3306
+        volumes:
+            - mysql_data:/var/lib/mysql
+    adminer:
+        image: adminer:latest
+        restart: always
+        ports:
+            - 8080:8080
+        links:
+            - database
+volumes:
+    mysql_data: {}

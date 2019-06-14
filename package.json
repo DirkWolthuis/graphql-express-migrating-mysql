@@ -1,0 +1,35 @@
+{
+    "name": "webpack-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "npm-run-all --parallel build:watch run:watch",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "build:watch": "webpack --watch",
+        "run": "node ./dist/app.js",
+        "run:watch": "nodemon ./dist/app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/polyfill": "^7.2.5",
+        "@babel/preset-env": "^7.3.4",
+        "babel-loader": "^8.0.5",
+        "body-parser": "^1.18.3",
+        "cors": "^2.8.5",
+        "dotenv": "^6.2.0",
+        "express": "^4.16.4",
+        "mysql2": "^1.6.5",
+        "nodemon": "^1.18.10",
+        "npm-run-all": "^4.1.5",
+        "sequelize": "^5.8.9",
+        "webpack-cli": "^3.2.3"
+    },
+    "devDependencies": {
+        "webpack": "^4.29.4",
+        "webpack-node-externals": "^1.7.2"
+    }
+}
