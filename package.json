@@ -1,5 +1,5 @@
 {
-    "name": "webpack-test",
+    "name": "graphql-express-migrating-mysql",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -11,7 +11,7 @@
         "run": "node ./dist/app.js",
         "run:watch": "nodemon ./dist/app.js"
     },
-    "author": "",
+    "author": "Dirk H. Wolthuis",
     "license": "ISC",
     "dependencies": {
         "@babel/core": "^7.3.4",
