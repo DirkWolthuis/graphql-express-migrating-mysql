@@ -4,7 +4,6 @@ var db = {}
 
 const sequelize = new Sequelize('graphql-mysql-tutorial', 'graphql', '123456', {
     host: 'localhost',
-    port: '8006',
     dialect: 'mysql',
     define: {
         freezeTableName: true,
